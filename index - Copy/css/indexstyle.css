@@ -1,0 +1,208 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: "Segoe Print";
+  margin: 0;
+}
+
+/* Style h1 */
+h1 {
+  font-family: "Segoe Print";
+  color: black;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: transparent;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: transparent;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: transparent;
+  padding: 20px;
+}
+
+/* Image gallery here */
+div.gallery {
+  border: 1px solid silver;
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+
+/* Footer */
+.col-sm-8{
+  padding:0;
+}
+.submit {
+  font-family: "playball";
+  font-style:cursive;
+  color:aqua;
+  font-size:70px;
+  transform:rotate(-10deg);
+  text-shadow: 2px 2px gold;
+}
+.form-horizontal {
+  font-size:20px;
+  font-family: "itim";
+  background-color: #c9ddd9;
+  border-right: 2px solid #006666;
+  border-left:2px solid #006666;
+}
+.input-control {
+  background: linear-gradient(#fceff9, #fceff9);
+  font-size: 30px;
+}
+.email {
+  font-family: "playball";
+  font-style: cursive;
+  color: aqua;
+  font-size: 70px;
+  transform:rotate(-6deg);
+  text-shadow: (3px 3px) gold;
+  padding-bottom: 40px;
+  margin-left:4.3%;
+}
+label {
+  font-size: 30px;
+  color:#d29494;
+}
+.email_p {
+  padding:0 20px 20px 40px;
+  font-size: 30px;
+  color: #d29494;
+}
+@media (max-width:700px){
+.col-sm-offset-1 {
+  margin-left: 2.33333333%;
+  }
+}
+.contact {
+  padding-top: 150px;
+}
+.contact_h {
+  color:#ea65cc;
+  font-family: "itim";
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+.contact p {
+  height: 100%;
+  color:#d29494;
+  font-size: 30px;
+  font-style: bold;
+}
+.location {
+  background-color:#c9ddd9;
+}
+.text {
+  font-size:50px;
+  font-family: "itim";
+}
+.socialmedia_icons {
+  padding-top:50px;
+  font:30px;
+}
+/* .jumbotron {
+  margin-bottom: 100px;
+}*/
+.submit {
+  cursor: pointer;
+}
+#nameError , #emailError , #orderError , #phoneError {
+  color:red;
+  margin-left:10px;
+}   
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

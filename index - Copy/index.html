@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jays Forbidden Sweets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/indexstyle.css">
+
+<!--coiny and itim font-->       
+<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+ 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!--palyball font family-->
+<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+
+  <body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Jays Forbidden Sweets</h1>
+  </div>
+
+  <!-- The flexible grid (content) -->
+
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./css/congrats.jpg">
+          <img src="./css/congrats.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./css/cookieandberry.jpg">
+      <img src="./css/cookieandberry.jpg" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+    
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./css/fallberry.jpg">
+      <img src="./css/fallberry.jpg" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+    
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./css/redheart.jpg">
+      <img src="./css/redheart.jpg" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>    
+    <div class="clearfix">
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+	$('.submit').click(function() {
+	    var firstName = $('#name');
+	    var emailAdd = $('#emailAddress');
+	    var orderDetail = $('#orderErrors');
+	    var phnError = $('#phoneNumber');
+        if (firstName.val() === "") {
+           $('#nameError').html("Please enter your name");
+        }
+        else if (firstName.val().match(/[^A-Z]/gi)){
+        	$('#nameError').html("Please enter valid name");
+        }
+        else {
+           $('#nameError').html("");
+       }
+        if (emailAdd.val() === "") {
+	       $("#emailError").html("Please enter your email");
+        }
+        else if (emailAdd.val().match(/[^@]/)) {
+           $("#emailError").html("Please enter a valid email address");
+   		}
+        else {
+           $('#emailError').html("");
+           }   
+        if (orderDetail.val() === ""){
+	       $("#orderError").html("Please enter your order details");
+	    }	   
+	    else {
+             $('#orderError').html("");
+           }          
+	    if (phnError.val() === ""){
+	       $("#phoneError").text("Please enter your name");
+        }
+        else if(phnError.val().match(/[^0-9]/)) {
+        	$("#phoneError").text("Please valid phone number, do not use any '-'");
+        }
+        else {
+           $('#phoneError').html("");
+        }
+    });
+    if ( $(window).width() > 1250) { 
+    $(".logo").animate({top: '+=100px'}, 2000); 
+    $("header").effect("slide", { direction: "down" }, 3000);
+    $(".nav_button").effect("slide", { direction: "up" }, 2000);
+    $("hr").effect("slide", {direction: "right"}, 2000);
+	$(".vertical-line").effect("slide", {direction: "left"}, 2500);
+	}
+	$("#history").accordion({active: 1});
+	var offsetval = $("nav").offset().top;
+	$(window).scroll(function(){
+		var scrollposition = $(window).scrollTop();
+		 if(scrollposition >448){
+			$(".nav_button").addClass("navbar-fixed-bottom");
+		 }
+		 else{
+			$(".nav_button").removeClass("navbar-fixed-bottom")
+		 }
+		 //var windowWidth = $(window).width();
+				//$("#therei").text(windowWidth);
+	});
+ });
+		
+</script>
+<section>
+    <div id="CONTACT">
+        <div class="fluid-container">
+            <div class="row location">
+                <div class="col-sm-4">	
+                    <form name ="emailForm" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="email col-sm-11 col-sm-offset-1">
+                                Email us
+                            </div>
+                            <div class="email_p text-center col-sm-8">
+                             Please e-mail us with your request. We aim to call you back the same working day to discuss your requirements. Please note that all fields below must be completed.
+                            </div>
+                            <label for="Name" class="col-sm-5 control-label">Full Name:</label>
+                            <p id="nameError"></p>
+                                <div class="col-sm-7">
+                                    <input type="text" id="name" class="input-control" placeholder="Full Name"/><!--form control gives enough space between items in form-->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Name" class="col-sm-5 control-label">Email:</label>
+                                <p id="emailError"></p>
+                                    <div class="col-sm-7">
+                                        <input name="emailAddress" id="emailAddress" class="input-control" type="email" placeholder="abcdef@email.com">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">Telephone:</label>
+                                <p id="phoneError"></p>
+                                    <div class="col-sm-7">
+                                        <input class="input-control" id="phoneNumber" type="phone" name="phone" placeholder="xxx-xxx-xxx">	
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Message" class="control-label col-sm-5">Please write your message here:</label>
+                                <p id="orderError"></p>
+                                    <div class="col-sm-7">
+                                        <textarea class="input-control" id="orderErrors" rows="3" placeholder="I want a cake"></textarea>	
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-8">
+                                    <div class="submit">Submit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-sm-4 contact">
+                        <div class="col-sm-offset-1">
+                            <p>
+                                <span class="contact_h">Call us on</span><br />
+                                    8787 8787878<br />
+                                    <span class="contact_h">Email us at</span><br />
+                                    jkjkj@adad.com<br />
+                                    <span class="contact_h">Mail us at</span><br />
+                                    Fresh Cakes & More
+                                    aaaaa aaaaa
+                                    aaaaa aaaaa
+                                    aaaaa aaaaa
+                                    aaaaa aaaaa
+                                    87898987
+                            </p>	
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>	
+    </div>	
+    </div>
+    </section>	
+    </main>
+     
+        <footer>	
+            <div class="text text-center">Follow us for latest updates, give your feedback on social media<br />
+                <ul class="socialmedia_icons">
+                    <li><a href=""><img src="https://cdn2.iconfinder.com/data/icons/colorful-guache-social-media-logos-1/155/social-media_facebook-128.png"></a></li>
+                    <li><a href=""><img src="https://cdn2.iconfinder.com/data/icons/colorful-guache-social-media-logos-1/155/social-media_instagram-128.png"></a></li>                   
+                </ul>
+            </div>
+          </footer>
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
